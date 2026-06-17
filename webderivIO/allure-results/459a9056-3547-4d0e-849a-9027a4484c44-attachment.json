@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": ".//span[contains(concat(\" \",@class,\" \"), \" rc-tree-title \") and normalize-space(text()) = \"\"Word File.doc\"\"] | .//span[contains(concat(\" \",@class,\" \"), \" rc-tree-title \") and not(.//span[contains(concat(\" \",@class,\" \"), \" rc-tree-title \") and normalize-space(text()) = \"\"Word File.doc\"\"]) and normalize-space() = \"\"Word File.doc\"\"]"
+}

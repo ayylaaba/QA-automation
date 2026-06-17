@@ -1,0 +1,2 @@
+element click intercepted: WebDriverError: element click intercepted: Element <button type="button" id="submit" class="btn btn-primary">...</button> is not clickable at point (830, 606). Other element would receive the click: <footer>...</footer>
+  (Session info: chrome=146.0.7680.165) when running "element/f.7E207C298562AE860F44F5E70FF21BDA.d.A1652D8C5E8A1ABB37EF4E8ABD341F38.e.21/click" with method "POST"
