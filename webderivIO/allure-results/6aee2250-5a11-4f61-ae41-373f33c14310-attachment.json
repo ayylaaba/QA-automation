@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[@class='rt-tr-group']//div[contains(text(), 'ismailbouzid@gmail.com')]/following-sibling::div//span[@title='Edit']"
+}

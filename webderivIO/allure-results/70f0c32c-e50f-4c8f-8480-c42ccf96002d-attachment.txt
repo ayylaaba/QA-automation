@@ -1,0 +1,2 @@
+element click intercepted: WebDriverError: element click intercepted: Element <span class="mr-2" data-toggle="tooltip" title="Edit" id="edit-record-6">...</span> is not clickable at point (823, 584). Other element would receive the click: <footer>...</footer>
+  (Session info: chrome=149.0.7827.115) when running "element/f.3ED088894955D77EB4AE003827DBD31D.d.76627C2015C213A7DF3D1C6A6CF0FBEB.e.115/click" with method "POST"
