@@ -27,9 +27,7 @@ class ButtonBoxPage {
         return $('button=Right Click Me');
     }
 
-    // async rightClickButton() {
-    //     await this.buttonRightClick.click({ button: 'right' });
-    // }
+    // WebdriverIO has a built-in method for right click
     async rightClickButton() {
         // ✅ WebdriverIO has a built-in method for right click
         await this.buttonRightClick.click({ button: 2 }); // 2 = right mouse button    }
