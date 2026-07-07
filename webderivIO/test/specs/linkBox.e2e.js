@@ -29,4 +29,10 @@ describe('test link page', () => {
         })
     }
 
+    it ('test after click on simpleLink should open new navbar', async () => {
+
+        
+
+
+    })
 })
