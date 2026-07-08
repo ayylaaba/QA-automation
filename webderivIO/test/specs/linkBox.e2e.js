@@ -16,7 +16,6 @@ describe('test link page', () => {
         await linkBoxPage.open();
     });
 
-    //test the links that will send an api call
     for (let i = 0; i < LinkApi.length; i++)
     {
         it (`test ${LinkApi[i].linkName} should show an api call`, async () =>
@@ -29,10 +28,13 @@ describe('test link page', () => {
         })
     }
 
-    it ('test after click on simpleLink should open new navbar', async () => {
-
+    it('test after click on simpleLink should open new tab', async () => {
         
-
-
+        await linkBoxPage.getUrlAfterClick('simpleLink');
     })
+    it('test after click on dynamicLink should open new tab', async () => {
+        
+        await linkBoxPage.getUrlAfterClick('dynamicLink');
+    })
+
 })
