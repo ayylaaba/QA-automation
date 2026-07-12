@@ -50,7 +50,6 @@ class linkBoxPage {
 
         await browser.switchToWindow(tabsBefore[0]);
     }   
-
 }
 
 export default new linkBoxPage();

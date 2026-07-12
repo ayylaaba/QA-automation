@@ -32,9 +32,9 @@ describe('test link page', () => {
         
         await linkBoxPage.getUrlAfterClick('simpleLink');
     })
+
     it('test after click on dynamicLink should open new tab', async () => {
         
         await linkBoxPage.getUrlAfterClick('dynamicLink');
     })
-
 })
