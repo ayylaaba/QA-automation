@@ -35,11 +35,8 @@ describe('test Upload and Download', () => {
             fs.unlinkSync(downloadPath);
         }
     
-        // Step 4: Click download button
         await UploadDownlodPage.downloadFile();
     
-        // Step 5: Wait for download to finish
-        // browser.pause() = hard wait in milliseconds
         await browser.pause(3000);
     
         // Step 6: Check file now exists on disk
@@ -47,7 +44,6 @@ describe('test Upload and Download', () => {
         console.log('File downloaded to:', downloadPath);
         console.log('File exists:', fileExists);
     
-        // Step 7: Assert
         await expect(fileExists).toBe(true);
     });
     
