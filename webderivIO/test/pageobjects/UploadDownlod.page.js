@@ -1,13 +1,9 @@
 
 class UploadDownloadPage {
-    // Get the upload button element
-    get uploadButton() {
-        return $('#uploadFile');
-    }
-
-    // Get the uploaded file path element
-    get uploadedFilePath() {
-        return $('#uploadedFilePath');
+    
+    // Open the upload/download page
+    async open(){
+        await browser.url('https://demoqa.com/upload-download');
     }
 
     // get download button element
@@ -25,9 +21,14 @@ class UploadDownloadPage {
         await this.uploadButton.setValue(remoteFilePath);
     }
 
-    // Open the upload/download page
-    async open(){
-        await browser.url('https://demoqa.com/upload-download');
+    // Get the upload button element
+    get uploadButton() {
+        return $('#uploadFile');
+    }
+
+    // Get the uploaded file path element
+    get uploadedFilePath() {
+        return $('#uploadedFilePath');
     }
 
     // get path after uploading the file
