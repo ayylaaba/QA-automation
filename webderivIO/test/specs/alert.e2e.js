@@ -1,27 +1,4 @@
 
-// import AlertPage from "../pageobjects/alert.page";
-
-// describe('test alert features', () => {
-    
-//     it ('should handle alert', async () => {
-//         await AlertPage.open();
-//         await AlertPage.clickAlertButton();
-//         await browser.pause(2000); // wait for 2 seconds to ensure the alert is displayed
-
-//         await browser.waitUntil(
-//             async () => await browser.isAlertOpen(),
-//             {
-//                 timeout: 2000,
-//                 timeoutMsg: 'Alert did not appear within 5 seconds'
-//             }
-//         );
-//         const alertText = await browser.getAlertText();
-//         await expect(alertText).toEqual('You clicked a button');
-//         await browser.acceptAlert();
-//     });
-// });
-
-
 import AlertPage from "../pageobjects/alert.page";
 
 describe('test alert features', () => {
