@@ -31,47 +31,47 @@ describe('test alert features', () => {
     });
 
     // Type 1 — Simple alert (appears instantly)
-    // it('should handle simple alert', async () => {
-    //     await AlertPage.clickAlertButton();
-    //     const text = await browser.getAlertText();
-    //     await expect(text).toBe('You clicked a button');
-    //     await browser.acceptAlert(); // click OK
-    // });
+    it('should handle simple alert', async () => {
+        await AlertPage.clickAlertButton();
+        const text = await browser.getAlertText();
+        await expect(text).toBe('You clicked a button');
+        await browser.acceptAlert(); // click OK
+    });
 
     // Type 2 — Timer alert (appears after 5 seconds)
-    // it('should handle timer alert', async () => {
-    //     await AlertPage.clickAlertButtonTimer();
+    it('should handle timer alert', async () => {
+        await AlertPage.clickAlertButtonTimer();
         
-    //     // This one needs waitUntil — alert appears after delay
-    //     await browser.waitUntil(
-    //         async () => await browser.isAlertOpen(),
-    //         { timeout: 6000, timeoutMsg: 'Timer alert did not appear' }
-    //     );
+        // This one needs waitUntil — alert appears after delay
+        await browser.waitUntil(
+            async () => await browser.isAlertOpen(),
+            { timeout: 6000, timeoutMsg: 'Timer alert did not appear' }
+        );
 
-    //     const text = await browser.getAlertText();
-    //     await expect(text).toBe('This alert appeared after 5 seconds');
-    //     await browser.acceptAlert();
-    // });
+        const text = await browser.getAlertText();
+        await expect(text).toBe('This alert appeared after 5 seconds');
+        await browser.acceptAlert();
+    });
 
-    // // // Type 3 — Confirm alert (OK or Cancel)
-    // it('should accept confirm alert', async () => {
-    //     await AlertPage.clickConfirmButton();
-    //     const text = await browser.getAlertText();
-    //     await expect(text).toBe('Do you confirm action?');
-    //     await browser.acceptAlert(); // click OK
+    // // Type 3 — Confirm alert (OK or Cancel)
+    it('should accept confirm alert', async () => {
+        await AlertPage.clickConfirmButton();
+        const text = await browser.getAlertText();
+        await expect(text).toBe('Do you confirm action?');
+        await browser.acceptAlert(); // click OK
 
-    //     // Check result message on page
-    //     const result = await $('#confirmResult').getText();
-    //     await expect(result).toContain('selected Ok');
-    // });
+        // Check result message on page
+        const result = await $('#confirmResult').getText();
+        await expect(result).toContain('selected Ok');
+    });
 
-    // it('should dismiss confirm alert', async () => {
-    //     await AlertPage.clickConfirmButton();
-    //     await browser.dismissAlert(); // click Cancel
+    it('should dismiss confirm alert', async () => {
+        await AlertPage.clickConfirmButton();
+        await browser.dismissAlert(); // click Cancel
 
-    //     const result = await $('#confirmResult').getText();
-    //     await expect(result).toContain('selected Cancel');
-    // });
+        const result = await $('#confirmResult').getText();
+        await expect(result).toContain('selected Cancel');
+    });
 
     // Type 4 — Prompt alert (text input)
     it('should handle prompt alert', async () => {
