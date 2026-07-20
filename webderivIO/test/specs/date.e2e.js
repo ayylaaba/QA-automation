@@ -13,7 +13,7 @@ describe('Date Input Tests', () => {
 
     it('should set a date and submit', async () => {
         console.log('Running test: should set a date and submit');
-        const testDate = '07/18/2026';
+        const testDate = '07/19/2026';
         
         await DatePickerPage.setDate(testDate);
         await DatePickerPage.submitDataInput();
