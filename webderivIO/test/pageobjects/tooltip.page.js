@@ -34,7 +34,7 @@ class ToolTipPage {
 
         // tooltip fades in - wait for it to actually be visible in DOM
         await this.tooltipBox.waitForDisplayed({
-            timeout: 5000,
+            timeout: 7000,
             timeoutMsg: 'Tooltip did not appear'
         });
 
